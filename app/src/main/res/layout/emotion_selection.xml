@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_marginTop="5dp"
+        android:layout_width="57dp"
+        android:layout_height="44dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/backbutton" />
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/headerlogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="48dp"
+        android:text="I want to feel"
+        android:textStyle="bold"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/laugh"
+        style="@style/optionCards">
+
+
+        <TextView
+            style="@style/optionCardsText"
+            android:text="Happy" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/sad"
+        style="@style/optionCards">
+
+        <TextView
+            style="@style/optionCardsText"
+            android:text="Sad" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/surprised"
+        style="@style/optionCards">
+
+        <TextView
+            style="@style/optionCardsText"
+            android:text="Surprised" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/inspired"
+        style="@style/optionCards">
+
+        <TextView
+            style="@style/optionCardsText"
+            android:text="Inspired" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/idc"
+        style="@style/optionCards">
+
+        <TextView
+            style="@style/optionCardsText"
+            android:text="Doesn't Matter" />
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

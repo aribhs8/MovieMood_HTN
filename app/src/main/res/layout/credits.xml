@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_marginTop="5dp"
+        android:layout_width="57dp"
+        android:layout_height="44dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/backbutton" />
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/headerlogo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Credits"
+            android:textAppearance="@android:style/TextAppearance.Material.Display2"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="363dp"
+            android:layout_height="526dp"
+            android:layout_marginTop="20dp"
+            android:text="Images: \nBack icon by https://icons8.com/icon/84994/back \n\nThumbs up icon by https://icons8.com/icon/2744/thumbs-up \n\nThumbs down icon by https://icons8.com/icon/2913/thumbs-down \n\nFilm Strip icon by https://icons8.com/icon/feJmfkm83WQX/film-strip \n\nPlay icon by https://icons8.com/icon/6JY5zZtJducA/play-button \n\n\nMovie Images and Data provided by TMDB (The Movie Database) API"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
